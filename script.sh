@@ -10,7 +10,7 @@ raw="$($CURL $CURLARGS $RVMHTTP)"
 
 # Variabelem lagres i log fil
 
-echo "$raw" > file.log
+echo "$raw" > file.json
 
 # Printer innhold i denne filen til terminalen
-cat file.log
+cat file.json
