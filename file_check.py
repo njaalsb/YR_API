@@ -1,5 +1,6 @@
 # Script for å overvåke filendringer med et gitt intervall, deretter printe deler av innholdet i filen
 # Langt intervall her ettersom værmeldingene ikke oppdateres spesielt ofte (1t intervall her)
+# Kilde til deler av koden: https://www.geeksforgeeks.org/how-to-detect-file-changes-using-python/
 
 import os
 import time
