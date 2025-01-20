@@ -1,0 +1,40 @@
+YR API:
+
+Koordinater til testing:
+gløs:
+long: 63.25419
+lat: 10.24659
+
+Greenwich:
+Lat: 51.477928
+Long: -0.001545
+
+https://api.met.no/doc/GettingStarted
+Header eksempel? 
+
+{
+  "accept-ranges": "bytes",
+  "access-control-allow-headers": "Origin",
+  "access-control-allow-methods": "GET",
+  "access-control-allow-origin": "*",
+  "age": "0",
+  "content-encoding": "gzip",
+  "content-length": "7807",
+  "content-type": "application/xml",
+  "date": "Wed, 01 Jan 2025 17:11:26 GMT",
+  "expires": "Wed, 01 Jan 2025 17:43:12 GMT",
+  "last-modified": "Wed, 01 Jan 2025 17:11:26 GMT",
+  "server": "nginx/1.18.0 (Ubuntu)",
+  "vary": "Accept, Accept-Encoding",
+  "via": "1.1 dalton-a (Varnish/7.6)",
+  "x-backend-host": "b_157_249_79_168_loc",
+  "x-varnish": "7511535132"
+}
+Fungerende basic request
+$ curl -A "MyTestApp/0.1 support@example.com" -s 'https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=51.5&lon=0'|json_pp
+{
+   "properties" : {
+      "meta" : {
+         "units" : {
+            "relative_humidity" : "%",
+            "air_temperature" : "celsius",
