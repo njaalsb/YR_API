@@ -1,6 +1,6 @@
 YR API:
 
-Koordinater til testing:
+Koordinater til testing (ikke vits med høyere en 5 desimalers presisjon):
 gløs:
 long: 63.25419
 lat: 10.24659
